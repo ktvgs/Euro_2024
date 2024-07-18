@@ -1,0 +1,9 @@
+{
+	"name": "eurodatafactoryktvgs",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bb66c727-fcf1-4f5a-9abf-711e08bc76f3",
+		"tenantId": "70de1992-07c6-480f-a318-a1afcba03983"
+	}
+}
