@@ -12,7 +12,7 @@ blob_name = 'matches.json'
 
 # Azure Table Storage configuration
 table_connection_string = 'DefaultEndpointsProtocol=https;AccountName=eurodataktvgs;AccountKey=KV69H4kTv+OnWf/x2oaJMTK3UqfRqvV+b5JdnuOyTcEnXEBAvJoPAVj7J5DomQC5diVU6VeatW0a+AStuCq3jg==;EndpointSuffix=core.windows.net'
-table_name = 'matchfixturestable1'
+table_name = 'matchfixtures1'
 
 # Access JSON data from Azure Blob Storage
 blob_service_client = BlobServiceClient.from_connection_string(blob_connection_string)
