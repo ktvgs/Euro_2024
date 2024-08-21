@@ -1,0 +1,97 @@
+fixture_id,fixture_date,venue_name,venue_city,goals_away,goals_home,fixture_round,score_fulltime_away,score_fulltime_home,score_extratime_away,score_extratime_home,score_halftime_away,score_halftime_home,score_penalty_away,score_penalty_home,away_team_id,away_team_name,away_team_win_result,home_team_id,home_team_name,home_team_win_result
+"[1145509 1145510 1145511 1145512 1145513 1145514 1145515 1145516 1145517
+ 1145518 1145519 1145520 1145521 1145522 1145523 1145524 1145525 1145526
+ 1145527 1145528 1145529 1145530 1145531 1145532 1145533 1145534 1145535
+ 1189846 1189847 1189848 1189849 1189850 1189851 1189852 1189853 1189854
+ 1212958 1214156 1215073 1215074 1215075 1215076 1215077 1215078 1219688
+ 1219689 1219959 1220308 1225853 1227539 1232551]","['2024-06-14T19:00:00+00:00' '2024-06-15T13:00:00+00:00'
+ '2024-06-15T16:00:00+00:00' '2024-06-15T19:00:00+00:00'
+ '2024-06-16T16:00:00+00:00' '2024-06-16T19:00:00+00:00'
+ '2024-06-17T19:00:00+00:00' '2024-06-17T16:00:00+00:00'
+ '2024-06-18T19:00:00+00:00' '2024-06-19T19:00:00+00:00'
+ '2024-06-19T16:00:00+00:00' '2024-06-19T13:00:00+00:00'
+ '2024-06-20T19:00:00+00:00' '2024-06-20T16:00:00+00:00'
+ '2024-06-20T13:00:00+00:00' '2024-06-21T19:00:00+00:00'
+ '2024-06-22T19:00:00+00:00' '2024-06-22T16:00:00+00:00'
+ '2024-06-23T19:00:00+00:00' '2024-06-23T19:00:00+00:00'
+ '2024-06-24T19:00:00+00:00' '2024-06-24T19:00:00+00:00'
+ '2024-06-25T19:00:00+00:00' '2024-06-25T19:00:00+00:00'
+ '2024-06-25T16:00:00+00:00' '2024-06-26T16:00:00+00:00'
+ '2024-06-26T19:00:00+00:00' '2024-06-16T13:00:00+00:00'
+ '2024-06-17T13:00:00+00:00' '2024-06-18T16:00:00+00:00'
+ '2024-06-21T13:00:00+00:00' '2024-06-21T16:00:00+00:00'
+ '2024-06-22T13:00:00+00:00' '2024-06-25T16:00:00+00:00'
+ '2024-06-26T16:00:00+00:00' '2024-06-26T19:00:00+00:00'
+ '2024-06-29T16:00:00+00:00' '2024-06-29T19:00:00+00:00'
+ '2024-07-01T16:00:00+00:00' '2024-06-30T16:00:00+00:00'
+ '2024-06-30T19:00:00+00:00' '2024-07-01T19:00:00+00:00'
+ '2024-07-02T16:00:00+00:00' '2024-07-02T19:00:00+00:00'
+ '2024-07-05T16:00:00+00:00' '2024-07-06T16:00:00+00:00'
+ '2024-07-05T19:00:00+00:00' '2024-07-06T19:00:00+00:00'
+ '2024-07-09T19:00:00+00:00' '2024-07-10T19:00:00+00:00'
+ '2024-07-14T19:00:00+00:00']","['Fußball Arena München' 'Cologne Stadium' 'Olympiastadion Berlin'
+ 'BVB Stadion Dortmund' 'Stuttgart Arena' 'Arena AufSchalke'
+ 'Düsseldorf Arena' 'Frankfurt Arena' 'Leipzig Stadium' 'Cologne Stadium'
+ 'Stuttgart Arena' 'Volksparkstadion' 'Arena AufSchalke' 'Frankfurt Arena'
+ 'Fußball Arena München' 'Leipzig Stadium' 'Cologne Stadium'
+ 'BVB Stadion Dortmund' 'Frankfurt Arena' 'Stuttgart Arena'
+ 'Leipzig Stadium' 'Düsseldorf Arena' 'Cologne Stadium'
+ 'Fußball Arena München' 'Olympiastadion Berlin' 'Frankfurt Arena'
+ 'Volksparkstadion' 'Volksparkstadion' 'Fußball Arena München'
+ 'BVB Stadion Dortmund' 'Düsseldorf Arena' 'Olympiastadion Berlin'
+ 'Volksparkstadion' 'BVB Stadion Dortmund' 'Stuttgart Arena'
+ 'Arena AufSchalke' 'Olympiastadion Berlin' 'BVB Stadion Dortmund'
+ 'Düsseldorf Arena' 'Arena AufSchalke' 'Cologne Stadium' 'Frankfurt Arena'
+ 'Fußball Arena München' 'Leipzig Stadium' 'Stuttgart Arena'
+ 'Düsseldorf Arena' 'Volksparkstadion' 'Olympiastadion Berlin'
+ 'Fußball Arena München' 'SIGNAL IDUNA PARK' 'Olympiastadion Berlin']","['München' 'Köln' 'Berlin' 'Dortmund' 'Stuttgart' 'Gelsenkirchen'
+ 'Düsseldorf' 'Frankfurt am Main' 'Leipzig' 'Köln' 'Stuttgart' 'Hamburg'
+ 'Gelsenkirchen' 'Frankfurt am Main' 'München' 'Leipzig' 'Köln' 'Dortmund'
+ 'Frankfurt am Main' 'Stuttgart' 'Leipzig' 'Düsseldorf' 'Köln' 'München'
+ 'Berlin' 'Frankfurt am Main' 'Hamburg' 'Hamburg' 'München' 'Dortmund'
+ 'Düsseldorf' 'Berlin' 'Hamburg' 'Dortmund' 'Stuttgart' 'Gelsenkirchen'
+ 'Berlin' 'Dortmund' 'Düsseldorf' 'Gelsenkirchen' 'Köln'
+ 'Frankfurt am Main' 'München' 'Leipzig' 'Stuttgart' 'Düsseldorf'
+ 'Hamburg' 'Berlin' 'München' 'Dortmund' 'Berlin']","[1 3 0 1 1 1 1 1 1 1 0 2 0 1 1 0 0 3 1 1 1 1 0 0 3 1 2 2 0 1 2 3 1 1 0 0 0
+ 0 0 1 1 0 3 2 1 1 0 1 1 2 1]","[5 1 3 2 1 0 0 0 2 1 2 2 1 1 1 0 2 0 1 0 1 0 0 0 2 1 1 1 3 3 1 1 1 1 0 2 2
+ 2 1 2 4 0 0 1 2 1 0 2 2 1 2]","['Group A - 1' 'Group A - 1' 'Group B - 1' 'Group B - 1' 'Group C - 1'
+ 'Group C - 1' 'Group D - 1' 'Group E - 1' 'Group F - 1' 'Group A - 2'
+ 'Group A - 2' 'Group B - 2' 'Group B - 2' 'Group C - 2' 'Group C - 2'
+ 'Group D - 2' 'Group E - 2' 'Group F - 2' 'Group A - 3' 'Group A - 3'
+ 'Group B - 3' 'Group B - 3' 'Group C - 3' 'Group C - 3' 'Group D - 3'
+ 'Group E - 3' 'Group F - 3' 'Group D - 1' 'Group E - 1' 'Group F - 1'
+ 'Group E - 2' 'Group D - 2' 'Group F - 2' 'Group D - 3' 'Group E - 3'
+ 'Group F - 3' 'Round of 16' 'Round of 16' 'Round of 16' 'Round of 16'
+ 'Round of 16' 'Round of 16' 'Round of 16' 'Round of 16' 'Quarter-finals'
+ 'Quarter-finals' 'Quarter-finals' 'Quarter-finals' 'Semi-finals'
+ 'Semi-finals' 'Final']","[1 3 0 1 1 1 1 1 1 1 0 2 0 1 1 0 0 3 1 1 1 1 0 0 3 1 2 2 0 1 2 3 1 1 0 0 0
+ 0 0 1 1 0 3 2 1 1 0 1 1 2 1]","[5 1 3 2 1 0 0 0 2 1 2 2 1 1 1 0 2 0 1 0 1 0 0 0 2 1 1 1 3 3 1 1 1 1 0 2 2
+ 2 1 1 4 0 0 1 1 1 0 2 2 1 2]",[False False False False False],[ True False  True False False],"[0 2 0 1 1 1 1 1 0 1 0 1 0 1 0 0 0 2 0 0 0 1 0 0 1 1 0 1 0 1 0 1 0 0 0 0 0
+ 0 0 1 1 0 1 1 0 0 0 1 1 1 0]","[3 0 3 2 0 0 0 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1
+ 0 0 0 1 0 0 0 0 0 0 0 2 1 0]",[0 3 5],[3 5 3],"[1108   15    3  778   21   10    2  773  770   15  769  778  768   10
+   14    2  774   27   25  769  768    9 1091   14  775  774  777 1118
+  772 1104  772  775  770   24    1   27  768   21    1  773 1104 1091
+ 1118  777   25   15    2  777    2   10   10]","['Scotland' 'Switzerland' 'Croatia' 'Albania' 'Denmark' 'England' 'France'
+ 'Slovakia' 'Czech Republic' 'Switzerland' 'Hungary' 'Albania' 'Italy'
+ 'England' 'Serbia' 'France' 'Romania' 'Portugal' 'Germany' 'Hungary'
+ 'Italy' 'Spain' 'Slovenia' 'Serbia' 'Austria' 'Romania' 'Türkiye'
+ 'Netherlands' 'Ukraine' 'Georgia' 'Ukraine' 'Austria' 'Czech Republic'
+ 'Poland' 'Belgium' 'Portugal' 'Italy' 'Denmark' 'Belgium' 'Slovakia'
+ 'Georgia' 'Slovenia' 'Netherlands' 'Türkiye' 'Germany' 'Switzerland'
+ 'France' 'Türkiye' 'France' 'England' 'England']","[False  True False False  True  True  True False False False False  True
+  True  True  True  True  True False False  True  True False False False
+ False False False False  True  True False False  True False False  True
+ False]","[  25  769    9  768 1091   14  775    1   27 1108   25    3    9   21
+ 1091 1118    1  777   15 1108    3  778   10   21 1118  773  770   24
+  774  777  773   24 1104    2  772 1104   15   25    2   10    9   27
+  774  775    9   10   27 1118    9 1118    9]","['Germany' 'Hungary' 'Spain' 'Italy' 'Slovenia' 'Serbia' 'Austria'
+ 'Belgium' 'Portugal' 'Scotland' 'Germany' 'Croatia' 'Spain' 'Denmark'
+ 'Slovenia' 'Netherlands' 'Belgium' 'Türkiye' 'Switzerland' 'Scotland'
+ 'Croatia' 'Albania' 'England' 'Denmark' 'Netherlands' 'Slovakia'
+ 'Czech Republic' 'Poland' 'Romania' 'Türkiye' 'Slovakia' 'Poland'
+ 'Georgia' 'France' 'Ukraine' 'Georgia' 'Switzerland' 'Germany' 'France'
+ 'England' 'Spain' 'Portugal' 'Romania' 'Austria' 'Spain' 'England'
+ 'Portugal' 'Netherlands' 'Spain' 'Netherlands' 'Spain']","[ True False  True  True False False False  True  True  True  True False
+ False False False False False  True  True False False  True  True  True
+  True  True  True  True False False  True  True False  True  True False
+  True]"
