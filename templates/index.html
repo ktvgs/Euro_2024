@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Stats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Player Stats Lookup</h1>
+        <form method="POST" action="/">
+            <label for="player_id">Enter Player ID:</label>
+            <input type="text" id="player_id" name="player_id" required>
+
+            <label for="column">Select Column:</label>
+            <select id="column" name="column">
+                <option value="">All Columns</option>
+                <option value="name">Name</option>
+                <option value="age">Age</option>
+                <option value="team_name">Team Name</option>
+                <!-- Add more columns as needed -->
+            </select>
+
+            <button type="submit">Get Player Data</button>
+        </form>
+
+        <div id="results">
+            {% if player_data %}
+                <h2>Euro 2024 Data:</h2>
+                {% if player_data.euro %}
+                    {% for key, value in player_data.euro.items() %}
+                        <p>{{ key }}: {{ value }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>No data found in Euro 2024 table.</p>
+                {% endif %}
+
+                <h2>La Liga Data:</h2>
+                {% if player_data.laliga %}
+                    {% for key, value in player_data.laliga.items() %}
+                        <p>{{ key }}: {{ value }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>No data found in La Liga table.</p>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
