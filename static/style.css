@@ -6,7 +6,6 @@ body {
 }
 
 .container {
-    max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -40,11 +39,13 @@ input, select {
 button {
     margin-top: 20px;
     padding: 10px;
+    max-width: 100px;
     background-color: #28a745;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 10px;
 }
 
 button:hover {
@@ -53,4 +54,26 @@ button:hover {
 
 #results {
     margin-top: 30px;
+}
+
+.tabular{
+    overflow-x: scroll; 
+
+}
+
+
+/* #player_id_search, #team_name_search {
+    display: none;
+} */
+
+/* #player_id_search {
+    display: block;
+} */
+
+table, th, td {
+    border: 1px solid;
+  }
+
+table{
+    margin: 10px;
 }

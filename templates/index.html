@@ -4,49 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Stats</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container p-4 m-3 border rounded shadow">
         <h1>Player Stats Lookup</h1>
         <form method="POST" action="/">
-            <label for="player_id">Enter Player ID:</label>
-            <input type="text" id="player_id" name="player_id" required>
-
-            <label for="column">Select Column:</label>
-            <select id="column" name="column">
-                <option value="">All Columns</option>
-                <option value="name">Name</option>
-                <option value="age">Age</option>
+            <label for="search_type">Search by:</label>
+            <select id="search_type" name="search_type">
+                <option value="player_id">Player ID</option>
                 <option value="team_name">Team Name</option>
-                <!-- Add more columns as needed -->
             </select>
 
-            <button type="submit">Get Player Data</button>
+            <div id="player_id_search">
+                <label for="player_id">Enter Player ID:</label>
+                <input type="text" id="player_id" name="player_id" >
+                <label for="column">Select Column:</label>
+                <select id="column" name="column">
+                    <option value="">All Columns</option>
+                    <option value="name">Name</option>
+                    <option value="age">Age</option>
+                    <option value="team_name">Team Name</option>
+                    <!-- Add more columns as needed -->
+                </select>
+            </div>
+
+            <div id="team_name_search">
+                <label for="team_name">Enter Team Name:</label>
+                <input type="text" id="team_name" name="team_name" >
+            </div>
+
+            <button type="submit">Search</button>
         </form>
+       
 
-        <div id="results">
+       
+        <div id="results" >
             {% if player_data %}
-                <h2>Euro 2024 Data:</h2>
-                {% if player_data.euro %}
-                    {% for key, value in player_data.euro.items() %}
-                        <p>{{ key }}: {{ value }}</p>
-                    {% endfor %}
-                {% else %}
-                    <p>No data found in Euro 2024 table.</p>
-                {% endif %}
-
-                <h2>La Liga Data:</h2>
-                {% if player_data.laliga %}
-                    {% for key, value in player_data.laliga.items() %}
-                        <p>{{ key }}: {{ value }}</p>
-                    {% endfor %}
-                {% else %}
-                    <p>No data found in La Liga table.</p>
-                {% endif %}
+                {% for league, data in player_data.items() %}
+                    {% if data[0] %} 
+                    <h3>{{ league.capitalize() }}</h3> 
+                    <div class="tabular">                      
+                        <table id="example" class=" display nowrap table table-hover table-striped table-bordered table-sm" style="width:100%">      
+                            <thead>          
+                            <tr>
+                            {% for d in data[0].keys() %}
+                                <th>{{ d }}</th>
+                            {% endfor %}                            
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            {% for row in data %}
+                            <tr>
+                                {% for d in row.values() %}
+                                    <td>{{ d }}</td>
+                                {% endfor %}                            
+                            </tr>
+                            {% endfor %}                            
+                        </tbody>
+                        </table>
+                        </div>
+                    {% endif %}                
+                {% endfor %}
             {% endif %}
+
         </div>
     </div>
     <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
 </body>
 </html>
+<script>
+    const searchTypeSelect = document.getElementById('search_type');
+    const playerIdSearchDiv = document.getElementById('player_id_search');
+    const teamNameSearchDiv = document.getElementById('team_name_search');
+
+    searchTypeSelect.addEventListener('change', () => {
+        if (searchTypeSelect.value === 'player_id') {
+            playerIdSearchDiv.style.display = 'block';
+            teamNameSearchDiv.style.display = 'none';
+        } else if (searchTypeSelect.value === 'team_name') {
+            playerIdSearchDiv.style.display = 'none';
+            teamNameSearchDiv.style.display = 'block';
+        }
+    });
+
+
+</script>
