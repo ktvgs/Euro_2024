@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from azure.data.tables import TableServiceClient
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 # Load environment variables from .env file
 load_dotenv()
@@ -21,6 +22,9 @@ table_service_client = TableServiceClient.from_connection_string(conn_str=connec
 euro_table_client = table_service_client.get_table_client(table_name=euro_table_name)
 laliga_table_client = table_service_client.get_table_client(table_name=laliga_table_name)
 epl_table_client = table_service_client.get_table_client(table_name=epl_table_name)
+
+# Load Euro players fixtures stats from CSV
+euro_fixtures_stats = pd.read_csv('euro_players_fixtures_stats.csv')
 
 app = Flask(__name__)
 
@@ -85,6 +89,12 @@ def home():
             }
 
     return render_template('index.html', player_data=player_data)
+
+@app.route('/player/<player_id>', methods=['GET'])
+def player_details(player_id):
+    """Fetch and display player fixture stats from the CSV."""
+    player_fixtures = euro_fixtures_stats[euro_fixtures_stats['player_id'] == int(player_id)]
+    return render_template('player_details.html', player_fixtures=player_fixtures.to_dict(orient='records'))
 
 if __name__ == '__main__':
     app.run(debug=True)

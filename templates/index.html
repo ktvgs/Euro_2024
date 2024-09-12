@@ -40,7 +40,7 @@
         </form>
        
 
-       
+<!--        
         <div id="results" >
             {% if player_data %}
                 {% for league, data in player_data.items() %}
@@ -70,8 +70,42 @@
                 {% endfor %}
             {% endif %}
 
-        </div>
+        </div> -->
     </div>
+    <div id="results">
+        {% if player_data %}
+            {% for league, data in player_data.items() %}
+                {% if data[0] %} 
+                <h3>{{ league.capitalize() }}</h3> 
+                <div class="tabular">                      
+                    <table id="example" class=" display nowrap table table-hover table-striped table-bordered table-sm" style="width:100%">      
+                        <thead>          
+                        <tr>
+                        {% for d in data[0].keys() %}
+                            <th>{{ d }}</th>
+                        {% endfor %}                            
+                        </tr>  
+                        </thead>
+                        <tbody>
+                            {% for row in data %}
+                            <tr>
+                                {% for dkey, dval in row.items() %}
+                                    {% if dkey == 'name' %}
+                                        <td><a href="/player/{{ row['id'] }}">{{ dval }}</a></td>
+                                    {% else %}
+                                        <td>{{ dval }}</td>
+                                    {% endif %}
+                                {% endfor %}                            
+                            </tr>
+                            {% endfor %}                            
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}                
+            {% endfor %}
+        {% endif %}
+    </div>
+    
     <script src="scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
