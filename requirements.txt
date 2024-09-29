@@ -1,0 +1,6 @@
+Flask
+azure-data-tables
+python-dotenv
+pandas
+requests
+my
