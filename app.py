@@ -106,6 +106,18 @@ import os
 from dotenv import load_dotenv
 import pandas as pd
 
+from visualize import player_rating_plot, plot_player_radar_with_stats
+
+from flask import Flask, render_template, send_file
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import io
+from threading import Lock
+import pandas as pd
+import base64
+from visualize import plot_player_radar_with_stats  # Import the function
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -131,6 +143,7 @@ seriaa_table_client = table_service_client.get_table_client(table_name=seriaa_ta
 euro_fixtures_stats = pd.read_csv('euro_players_fixtures_stats.csv')
 
 app = Flask(__name__)
+plot_lock = Lock()  # Define plot_lock here
 
 # Columns to fetch
 columns_to_fetch = [
@@ -201,7 +214,38 @@ def home():
 def player_details(player_id):
     """Fetch and display player fixture stats from the CSV."""
     player_fixtures = euro_fixtures_stats[euro_fixtures_stats['player_id'] == int(player_id)]
-    return render_template('player_details.html', player_fixtures=player_fixtures.to_dict(orient='records'))
+    
+    # Generate the rating plot
+    with plot_lock:
+        plt.figure(figsize=(8, 8))
+        player_rating_plot(int(player_id))
+        
+        # Save the plot to a BytesIO object
+        buf = io.BytesIO()
+        plt.savefig(buf, format='png')
+        buf.seek(0)
+        plt.close()
+
+    rating_plot_data = base64.b64encode(buf.getvalue()).decode('utf-8')
+
+    # Generate the radar plot
+    with plot_lock:
+        plt.figure(figsize=(8, 8))
+        plot_player_radar_with_stats(int(player_id))
+        
+        # Save the plot to a BytesIO object
+        buf = io.BytesIO()
+        plt.savefig(buf, format='png')
+        buf.seek(0)
+        plt.close()
+    
+    # Encode the plot to base64 for embedding in HTML
+    radar_plot_data = base64.b64encode(buf.getvalue()).decode('utf-8')
+    
+    return render_template('player_details.html', 
+                           player_fixtures=player_fixtures.to_dict(orient='records'),
+                           radar_plot_data=radar_plot_data, rating_plot_data=rating_plot_data)
+    # return render_template('player_details.html', player_fixtures=player_fixtures.to_dict(orient='records'))
 
 if __name__ == '__main__':
     app.run(debug=True)

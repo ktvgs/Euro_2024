@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
+    
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -76,4 +77,10 @@ table, th, td {
 
 table{
     margin: 10px;
+}
+
+img{
+    border: solid 1px brown;
+    width: 600px;
+    height: 600px;
 }

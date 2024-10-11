@@ -11,26 +11,34 @@
     <div class="container p-4 m-3 border rounded shadow">
         <h1>Player Fixture Stats</h1>
 
-        <table class="table table-hover table-bordered">
-            <thead>
-                <tr>
-                    {% for key in player_fixtures[0].keys() %}
-                        <th>{{ key }}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                {% for row in player_fixtures %}
+        <!-- <table class="table table-hover table-bordered"> -->
+
+            <div class="tabular">
+            <table class=" display nowrap table table-hover table-striped table-bordered table-sm" style="width:100%">
+                
+                <thead>
                     <tr>
-                        {% for value in row.values() %}
-                            <td>{{ value }}</td>
+                        {% for key in player_fixtures[0].keys() %}
+                        <th>{{ key }}</th>
                         {% endfor %}
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-
-        <a href="/" class="btn btn-primary">Back to Home</a>
-    </div>
-</body>
+                </thead>
+                <tbody>
+                    {% for row in player_fixtures %}
+                    <tr>
+                        {% for value in row.values() %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
+            
+            
+            <img src="data:image/png;base64,{{ radar_plot_data }}" alt="Player Radar Chart" >
+            <img src="data:image/png;base64,{{ rating_plot_data }}" alt="Player Radar Chart" >
+            <a href="/" class="btn btn-primary">Back to Home</a> 
+        </div>
+    </body>
 </html>

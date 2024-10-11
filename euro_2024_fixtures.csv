@@ -1,0 +1,52 @@
+fixture_id,referee,date,venue,status,league,round,home_team,away_team,home_goals,away_goals,home_score_fulltime,away_score_fulltime
+1145509,C. Turpin,2024-06-14T19:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Group A - 1,Germany,Scotland,5,1,5,1
+1145510,S. Vinčić,2024-06-15T13:00:00+00:00,Cologne Stadium,Match Finished,Euro Championship,Group A - 1,Hungary,Switzerland,1,3,1,3
+1145511,M. Oliver,2024-06-15T16:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Group B - 1,Spain,Croatia,3,0,3,0
+1145512,F. Zwayer,2024-06-15T19:00:00+00:00,BVB Stadion Dortmund,Match Finished,Euro Championship,Group B - 1,Italy,Albania,2,1,2,1
+1189846,Artur Soares Dias,2024-06-16T13:00:00+00:00,Volksparkstadion,Match Finished,Euro Championship,Group D - 1,Poland,Netherlands,1,2,1,2
+1145513,S. Schärer,2024-06-16T16:00:00+00:00,Stuttgart Arena,Match Finished,Euro Championship,Group C - 1,Slovenia,Denmark,1,1,1,1
+1145514,D. Orsato,2024-06-16T19:00:00+00:00,Arena AufSchalke,Match Finished,Euro Championship,Group C - 1,Serbia,England,0,1,0,1
+1189847,G. Nyberg,2024-06-17T13:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Group E - 1,Romania,Ukraine,3,0,3,0
+1145516,H. Meler,2024-06-17T16:00:00+00:00,Frankfurt Arena,Match Finished,Euro Championship,Group E - 1,Belgium,Slovakia,0,1,0,1
+1145515,Gil Manzano,2024-06-17T19:00:00+00:00,Düsseldorf Arena,Match Finished,Euro Championship,Group D - 1,Austria,France,0,1,0,1
+1189848,F. Tello,2024-06-18T16:00:00+00:00,BVB Stadion Dortmund,Match Finished,Euro Championship,Group F - 1,Türkiye,Georgia,3,1,3,1
+1145517,M. Guida,2024-06-18T19:00:00+00:00,Leipzig Stadium,Match Finished,Euro Championship,Group F - 1,Portugal,Czech Republic,2,1,2,1
+1145520,F. Letexier,2024-06-19T13:00:00+00:00,Volksparkstadion,Match Finished,Euro Championship,Group B - 2,Croatia,Albania,2,2,2,2
+1145519,D. Makkelie,2024-06-19T16:00:00+00:00,Stuttgart Arena,Match Finished,Euro Championship,Group A - 2,Germany,Hungary,2,0,2,0
+1145518,I. Kružliak,2024-06-19T19:00:00+00:00,Cologne Stadium,Match Finished,Euro Championship,Group A - 2,Scotland,Switzerland,1,1,1,1
+1145523,I. Kovács,2024-06-20T13:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Group C - 2,Slovenia,Serbia,1,1,1,1
+1145522,Artur Soares Dias,2024-06-20T16:00:00+00:00,Frankfurt Arena,Match Finished,Euro Championship,Group C - 2,Denmark,England,1,1,1,1
+1145521,S. Vinčić,2024-06-20T19:00:00+00:00,Arena AufSchalke,Match Finished,Euro Championship,Group B - 2,Spain,Italy,1,0,1,0
+1189849,M. Oliver,2024-06-21T13:00:00+00:00,Düsseldorf Arena,Match Finished,Euro Championship,Group E - 2,Slovakia,Ukraine,1,2,1,2
+1189850,H. Meler,2024-06-21T16:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Group D - 2,Poland,Austria,1,3,1,3
+1145524,A. Taylor,2024-06-21T19:00:00+00:00,Leipzig Stadium,Match Finished,Euro Championship,Group D - 2,Netherlands,France,0,0,0,0
+1189851,D. Siebert,2024-06-22T13:00:00+00:00,Volksparkstadion,Match Finished,Euro Championship,Group F - 2,Georgia,Czech Republic,1,1,1,1
+1145526,F. Zwayer,2024-06-22T16:00:00+00:00,BVB Stadion Dortmund,Match Finished,Euro Championship,Group F - 2,Türkiye,Portugal,0,3,0,3
+1145525,S. Marciniak,2024-06-22T19:00:00+00:00,Cologne Stadium,Match Finished,Euro Championship,Group E - 2,Belgium,Romania,2,0,2,0
+1145527,D. Orsato,2024-06-23T19:00:00+00:00,Frankfurt Arena,Match Finished,Euro Championship,Group A - 3,Switzerland,Germany,1,1,1,1
+1145528,F. Tello,2024-06-23T19:00:00+00:00,Stuttgart Arena,Match Finished,Euro Championship,Group A - 3,Scotland,Hungary,0,1,0,1
+1145529,D. Makkelie,2024-06-24T19:00:00+00:00,Leipzig Stadium,Match Finished,Euro Championship,Group B - 3,Croatia,Italy,1,1,1,1
+1145530,G. Nyberg,2024-06-24T19:00:00+00:00,Düsseldorf Arena,Match Finished,Euro Championship,Group B - 3,Albania,Spain,0,1,0,1
+1189852,M. Guida,2024-06-25T16:00:00+00:00,BVB Stadion Dortmund,Match Finished,Euro Championship,Group D - 3,France,Poland,1,1,1,1
+1145533,I. Kružliak,2024-06-25T16:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Group D - 3,Netherlands,Austria,2,3,2,3
+1145531,C. Turpin,2024-06-25T19:00:00+00:00,Cologne Stadium,Match Finished,Euro Championship,Group C - 3,England,Slovenia,0,0,0,0
+1145532,F. Letexier,2024-06-25T19:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Group C - 3,Denmark,Serbia,0,0,0,0
+1189853,A. Taylor,2024-06-26T16:00:00+00:00,Stuttgart Arena,Match Finished,Euro Championship,Group E - 3,Ukraine,Belgium,0,0,0,0
+1145534,D. Siebert,2024-06-26T16:00:00+00:00,Frankfurt Arena,Match Finished,Euro Championship,Group E - 3,Slovakia,Romania,1,1,1,1
+1145535,I. Kovács,2024-06-26T19:00:00+00:00,Volksparkstadion,Match Finished,Euro Championship,Group F - 3,Czech Republic,Türkiye,1,2,1,2
+1189854,S. Schärer,2024-06-26T19:00:00+00:00,Arena AufSchalke,Match Finished,Euro Championship,Group F - 3,Georgia,Portugal,2,0,2,0
+1212958,S. Marciniak,2024-06-29T16:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Round of 16,Switzerland,Italy,2,0,2,0
+1214156,M. Oliver,2024-06-29T19:00:00+00:00,BVB Stadion Dortmund,Match Finished,Euro Championship,Round of 16,Germany,Denmark,2,0,2,0
+1215074,H. Meler,2024-06-30T16:00:00+00:00,Arena AufSchalke,Match Finished,Euro Championship,Round of 16,England,Slovakia,2,1,1,1
+1215075,F. Letexier,2024-06-30T19:00:00+00:00,Cologne Stadium,Match Finished,Euro Championship,Round of 16,Spain,Georgia,4,1,4,1
+1215073,G. Nyberg,2024-07-01T16:00:00+00:00,Düsseldorf Arena,Match Finished,Euro Championship,Round of 16,France,Belgium,1,0,1,0
+1215076,D. Orsato,2024-07-01T19:00:00+00:00,Frankfurt Arena,Match Finished,Euro Championship,Round of 16,Portugal,Slovenia,0,0,0,0
+1215077,F. Zwayer,2024-07-02T16:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Round of 16,Romania,Netherlands,0,3,0,3
+1215078,Artur Soares Dias,2024-07-02T19:00:00+00:00,Leipzig Stadium,Match Finished,Euro Championship,Round of 16,Austria,Türkiye,1,2,1,2
+1219688,A. Taylor,2024-07-05T16:00:00+00:00,Stuttgart Arena,Match Finished,Euro Championship,Quarter-finals,Spain,Germany,2,1,1,1
+1219959,M. Oliver,2024-07-05T19:00:00+00:00,Volksparkstadion,Match Finished,Euro Championship,Quarter-finals,Portugal,France,0,0,0,0
+1219689,D. Orsato,2024-07-06T16:00:00+00:00,Düsseldorf Arena,Match Finished,Euro Championship,Quarter-finals,England,Switzerland,1,1,1,1
+1220308,C. Turpin,2024-07-06T19:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Quarter-finals,Netherlands,Türkiye,2,1,2,1
+1225853,S. Vinčić,2024-07-09T19:00:00+00:00,Fußball Arena München,Match Finished,Euro Championship,Semi-finals,Spain,France,2,1,2,1
+1227539,F. Zwayer,2024-07-10T19:00:00+00:00,SIGNAL IDUNA PARK,Match Finished,Euro Championship,Semi-finals,Netherlands,England,1,2,1,2
+1232551,F. Letexier,2024-07-14T19:00:00+00:00,Olympiastadion Berlin,Match Finished,Euro Championship,Final,Spain,England,2,1,2,1
